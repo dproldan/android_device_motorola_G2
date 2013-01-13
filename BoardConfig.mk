@@ -18,7 +18,3 @@ BOARD_HAVE_BLUETOOTH_BCM=true
 # no hardware camera
 USE_CAMERA_STUB := true
 
-# Custom releasetools
-TARGET_PROVIDES_RELEASETOOLS := true
-TARGET_RELEASETOOL_IMG_FROM_TARGET_SCRIPT := ./device/motorola/G2/releasetools/G2_img_from_target_files
-TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./device/motorola/G2/releasetools/G2_ota_from_target_files
