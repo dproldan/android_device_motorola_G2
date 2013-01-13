@@ -1,7 +1,7 @@
 android_device_motorola_G2
 ==========================
 
- Building AOSP for the Motorola MotoACTV.  This is a work in progress.  It builds,  but the result has been tested yet.
+ Building AOSP for the Motorola MotoACTV.  This is a work in progress.  It builds,  but the result hasn't been tested yet.
  
  How to build:
 
