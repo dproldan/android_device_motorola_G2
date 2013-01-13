@@ -15,7 +15,7 @@
 LOCAL_PATH := $(call my-dir)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-check_kernel
+LOCAL_MODULE := G2_releaseutils-check_kernel
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -24,7 +24,7 @@ LOCAL_SRC_FILES := check_kernel
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-finalize_release
+LOCAL_MODULE := G2_releaseutils-finalize_release
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -33,7 +33,7 @@ LOCAL_SRC_FILES := finalize_release
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-gb_kern-update-binary
+LOCAL_MODULE := G2_releaseutils-gb_kern-update-binary
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -42,7 +42,7 @@ LOCAL_SRC_FILES := gb_kern-update-binary
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-gb_kern-update.zip
+LOCAL_MODULE := G2_releaseutils-gb_kern-update.zip
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -51,7 +51,7 @@ LOCAL_SRC_FILES := gb_kern-update.zip
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-mke2fs
+LOCAL_MODULE := G2_releaseutils-mke2fs
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -60,7 +60,7 @@ LOCAL_SRC_FILES := mke2fs
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-tune2fs
+LOCAL_MODULE := G2_releaseutils-tune2fs
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils
@@ -69,7 +69,7 @@ LOCAL_SRC_FILES := tune2fs
 include $(BUILD_PREBUILT)
 
 include $(CLEAR_VARS)
-LOCAL_MODULE := shadow_releaseutils-update_kernel
+LOCAL_MODULE := G2_releaseutils-update_kernel
 LOCAL_MODULE_TAGS := optional
 LOCAL_MODULE_CLASS := ETC
 LOCAL_MODULE_PATH := $(TARGET_OUT_ETC)/releaseutils

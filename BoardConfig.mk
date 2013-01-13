@@ -4,7 +4,7 @@
 #
 
 # inherit from the proprietary version
--include vendor/motorola/umts_sholes/BoardConfigVendor.mk
+-include vendor/motorola/G2/BoardConfigVendor.mk
 
 # The generic product target doesn't have any hardware-specific pieces.
 TARGET_NO_BOOTLOADER := true
