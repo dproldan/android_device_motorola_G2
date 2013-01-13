@@ -51,18 +51,10 @@ PRODUCT_PACKAGES += \
     libspellingcheckengine
 
 
-PRODUCT_COPY_FILES += \
-    device/motorola/G2/prebuilt/lib/libbt-aptx.so:/system/lib/libbt-aptx.so \
-    device/motorola/G2/prebuilt/lib/libbt-mp3.so:/system/lib/libbt-mp3.so \
-    device/motorola/G2/prebuilt/lib/libbt-mpeg12pl.so:/system/lib/libbt-mpeg12pl.so \
-    device/motorola/G2/prebuilt/lib/libbt-aptx.so:/obj/lib/libbt-aptx.so \
-    device/motorola/G2/prebuilt/lib/libbt-mp3.so:/obj/lib/libbt-mp3.so \
-    device/motorola/G2/prebuilt/lib/libbt-mpeg12pl.so:/obj/lib/libbt-mpeg12pl.so \
-
 
 $(call inherit-product, build/target/product/generic.mk)
 
-# use high-density artwork where available
+# use low-density artwork where available
 PRODUCT_LOCALES += ldpi
 
 PRODUCT_NAME := generic_G2
