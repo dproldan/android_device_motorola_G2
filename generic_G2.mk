@@ -50,7 +50,8 @@ PRODUCT_PACKAGES += \
     resize2fs \
     libspellingcheckengine
 
-
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=120
 
 $(call inherit-product, build/target/product/generic.mk)
 

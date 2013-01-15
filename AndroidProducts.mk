@@ -26,4 +26,6 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/generic_G2.mk
+    $(LOCAL_DIR)/generic_G2.mk \
+    $(LOCAL_DIR)/full_G2.mk
+

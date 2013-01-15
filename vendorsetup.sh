@@ -21,3 +21,4 @@
 # function: add_lunch_combo generic-eng
 
 add_lunch_combo generic_G2-userdebug
+add_lunch_combo full_G2-userdebug
