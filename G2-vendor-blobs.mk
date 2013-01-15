@@ -49,6 +49,15 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/bin/msp430:/system/bin/msp430 \
     ${DEVICE_PREBUILT}/bin/gkisystem:/system/bin/gkisystem \
     ${DEVICE_PREBUILT}/bin/rild_tcmd:/system/bin/rild_tcmd \
+    ${DEVICE_PREBUILT}/bin/ecckeyd:/system/bin/ecckeyd \
+    ${DEVICE_PREBUILT}/bin/gkilogd:/system/bin/gkilogd \
+    ${DEVICE_PREBUILT}/bin/pvrsrvinit:/system/bin/pvrsrvinit \
+    ${DEVICE_PREBUILT}/bin/secclkd:/system/bin/secclkd \
+    ${DEVICE_PREBUILT}/bin/tcmd:/system/bin/tcmd \
+    ${DEVICE_PREBUILT}/bin/serialno_tracker:/system/bin/serialno_tracker \
+    ${DEVICE_PREBUILT}/bin/battd:/system/bin/battd \
+    ${DEVICE_PREBUILT}/bin/gps_driver:/system/bin/gps_driver \
+    ${DEVICE_PREBUILT}/default.prop:/system/default.prop \
     
 # copy all of our kernel modules under the "modules" directory to system/lib/modules
 PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/G2/proprietary/lib/modules && \
@@ -71,7 +80,7 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/hw/kinetics.G2.so:system/lib/hw/kinetics.G2.so \
     ${DEVICE_PREBUILT}/lib/hw/lights.G2.so:system/lib/hw/lights.G2.so \
     ${DEVICE_PREBUILT}/lib/hw/sensors.G2.so:system/lib/hw/sensors.G2.so \
-    ${DEVICE_PREBUILT}/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
+#    ${DEVICE_PREBUILT}/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
 
 #copy hw libs under system/etc/firmware
 PRODUCT_COPY_FILES += \
@@ -85,3 +94,28 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/etc/mspfirmware/mspfirmware.bin:system/etc/mspfirmware/mspfirmware.bin \
     ${DEVICE_PREBUILT}/etc/mspfirmware/mspfirmwarefactory.bin:system/etc/mspfirmware/mspfirmwarefactory.bin \
     ${DEVICE_PREBUILT}/etc/mspfirmware/version.txt:system/etc/mspfirmware/version.txt \
+
+
+#copy binaries as needed
+PRODUCT_COPY_FILES += \
+    ${DEVICE_PREBUILT}/lib/libpvr2d.so:/system/lib/libpvr2d.so \
+    ${DEVICE_PREBUILT}/lib/libsrv_um.so:/system/lib/libsrv_um.so \
+    ${DEVICE_PREBUILT}/lib/egl/egl.cfg:/system/lib/egl/egl.cfg \
+    ${DEVICE_PREBUILT}/lib/egl/libeglinfo.so:/system/lib/egl/libeglinfo.so \
+    ${DEVICE_PREBUILT}/lib/egl/libEGL_POWERVR_SGX530_125.so:/system/lib/egl/libEGL_POWERVR_SGX530_125.so \
+    ${DEVICE_PREBUILT}/lib/egl/libgles1_texture_stream.so:/system/lib/egl/libgles1_texture_stream.so \
+    ${DEVICE_PREBUILT}/lib/egl/libgles2_texture_stream.so:/system/lib/egl/libgles2_texture_stream.so \
+    ${DEVICE_PREBUILT}/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so \
+    ${DEVICE_PREBUILT}/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
+    ${DEVICE_PREBUILT}/lib/egl/libGLESv2_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+
+#PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/G2/proprietary/xbin && \
+#	find vendor/motorola/G2/proprietary/xbin -name '*' \
+#	-printf '%p:system/xbin/%f ')
+
+PRODUCT_COPY_FILES += \
+     ${DEVICE_PREBUILT}/media/bootanimation.zip:system/media/bootanimation.zip \
+     ${DEVICE_PREBUILT}/xbin/busybox:system/xbin/busybox \
+
+
+
