@@ -1,0 +1,6 @@
+dd if=/dev/zero of=./system.img bs=1k count=159616
+mkfs.ext3 system.img -F
+mkdir mnt-point
+sudo mount -t ext3 -o loop system.img mnt-point/
+cp -rfp ./out/target/product/G2/system/* mnt-point/
+sudo umount mnt-point
