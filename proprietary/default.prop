@@ -1,0 +1,6 @@
+#
+# ADDITIONAL_DEFAULT_PROPERTIES
+# Ensure that adbd is always enabled
+#
+persist.factory.allow_adb=1
+persist.service.adb.enable=1
