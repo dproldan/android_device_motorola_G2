@@ -1,9 +1,11 @@
 #!/system/bin/sh
-export PATH=/system/bin:$PATH
+export PATH=/system/bin:/system/xbin:$PATH
 PART_ALIAS=$1
 MOUNT_POINT=$2
 BLOCK_DEVICE=/dev/block/${PART_ALIAS}
 UNPACK_IMAGE=/system/${PART_ALIAS}.img.gz
+
+/system/xbin/busybox --install -s /system/xbin/
 
 if [ -e ${BLOCK_DEVICE} ]; then
     if [ -e ${UNPACK_IMAGE} ]; then

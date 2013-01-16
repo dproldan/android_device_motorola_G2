@@ -21,7 +21,8 @@ PRODUCT_COPY_FILES := \
     ${DEVICE_PREBUILT}/lib/libbt-aptx.so:/obj/lib/libbt-aptx.so \
     ${DEVICE_PREBUILT}/lib/libbt-mp3.so:/obj/lib/libbt-mp3.so \
     ${DEVICE_PREBUILT}/lib/libbt-mpeg12pl.so:/obj/lib/libbt-mpeg12pl.so \
-
+    ${DEVICE_PREBUILT}/lib/libaudio.so:/obj/lib/libaudio.so \
+    ${DEVICE_PREBUILT}/lib/libaudiopolicy.so:/obj/lib/libaudiopolicy.so \
 
 
 # All the blobs that appear in the stock init.rc and init.mapphone_umts.rc 
@@ -95,6 +96,10 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/etc/mspfirmware/mspfirmwarefactory.bin:system/etc/mspfirmware/mspfirmwarefactory.bin \
     ${DEVICE_PREBUILT}/etc/mspfirmware/version.txt:system/etc/mspfirmware/version.txt \
 
+#copy audio libs under system/lib/
+PRODUCT_COPY_FILES += \
+    ${DEVICE_PREBUILT}/lib/libaudio.so:system/lib/libaudio.so \
+    ${DEVICE_PREBUILT}/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
 
 #copy binaries as needed
 PRODUCT_COPY_FILES += \
@@ -116,6 +121,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/media/bootanimation.zip:system/media/bootanimation.zip \
      ${DEVICE_PREBUILT}/xbin/busybox:system/xbin/busybox \
+     ${DEVICE_PREBUILT}/bin/check_sdc.sh:system/bin/check_sdc.sh \
+
 
 
 
