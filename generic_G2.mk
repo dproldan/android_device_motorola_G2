@@ -52,6 +52,8 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=120
+    ro.product.multi_touch_enabled=true \
+    ro.product.max_num_touch=2 \
 
 $(call inherit-product, build/target/product/generic.mk)
 
