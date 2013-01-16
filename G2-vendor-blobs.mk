@@ -100,6 +100,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/libaudio.so:system/lib/libaudio.so \
     ${DEVICE_PREBUILT}/lib/libaudiopolicy.so:system/lib/libaudiopolicy.so \
+    ${DEVICE_PREBUILT}/lib/libasound.so:system/lib/libasound.so \
 
 #copy binaries as needed
 PRODUCT_COPY_FILES += \
