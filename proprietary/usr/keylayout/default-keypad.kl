@@ -86,6 +86,6 @@ key 155   ENVELOPE          WAKE_DROPPED
 key 12    MINUS             WAKE_DROPPED
 key 13    EQUALS            WAKE_DROPPED
 key 215   AT                WAKE_DROPPED
-key 220   HOME              WAKE_DROPPED
+key 220   FITNESS           WAKE_DROPPED
 key 226   HEADSETHOOK       WAKE
 key 387   MENU              WAKE_DROPPED

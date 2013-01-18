@@ -123,6 +123,22 @@ PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/media/bootanimation.zip:system/media/bootanimation.zip \
      ${DEVICE_PREBUILT}/xbin/busybox:system/xbin/busybox \
      ${DEVICE_PREBUILT}/bin/check_sdc.sh:system/bin/check_sdc.sh \
+     ${DEVICE_PREBUILT}/etc/vold.fstab:system/etc/vold.fstab \
+     ${DEVICE_PREBUILT}/etc/asound.conf:system/etc/asound.conf \
+     ${DEVICE_PREBUILT}/bin/loadpreinstalls.sh:system/bin/loadpreinstalls.sh \
+     ${DEVICE_PREBUILT}/bin/vold:system/bin/vold \
+
+#  gps
+PRODUCT_COPY_FILES += \
+     ${DEVICE_PREBUILT}/etc/location.cfg:system/etc/location.cfg \
+     ${DEVICE_PREBUILT}/etc/location/gsd4e.pd2:system/etc/location/gsd4e.pd2 \
+     ${DEVICE_PREBUILT}/bin/SiRFDrv:system/bin/SiRFDrv \
+     ${DEVICE_PREBUILT}/bin/location:system/bin/location \
+     ${DEVICE_PREBUILT}/lib/libgki.so:system/lib/libgki.so \
+     ${DEVICE_PREBUILT}/lib/libmotodbgutils.so:system/lib/libmotodbgutils.so \
+     ${DEVICE_PREBUILT}/lib/libtinyxml_stl.so:system/lib/libtinyxml_stl.so \
+     ${DEVICE_PREBUILT}/lib/libtpa_core.so:system/lib/libtpa_core.so \
+     ${DEVICE_PREBUILT}/lib/libcryptoki.so:system/lib/libcryptoki.so \
 
 
 
