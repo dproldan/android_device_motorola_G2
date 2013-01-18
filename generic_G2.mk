@@ -48,7 +48,8 @@ PRODUCT_PACKAGES += \
     tune2fs \
     dumpe2fs \
     resize2fs \
-    libspellingcheckengine
+    libspellingcheckengine \
+    Usb
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=120
@@ -56,6 +57,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.product.max_num_touch=2 \
 
 $(call inherit-product, build/target/product/generic.mk)
+$(call inherit-product, frameworks/base/data/sounds/OriginalAudio.mk)
 
 # use low-density artwork where available
 PRODUCT_LOCALES += ldpi

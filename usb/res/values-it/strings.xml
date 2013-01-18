@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="usb_toast_phone_data_disabled">I dati del telefono verranno disattivati.</string>
+    <string name="usb_selection_notification_title">Connessione USB</string>
+    <string name="usb_selection_notification_message">Seleziona per gestire connessione USB</string>
+    <string name="usb_selection_notification_message_for_modem">Tocca per dettagli e per disconnettere</string>
+    <string name="usb_connection">Connessione USB</string>
+    <string name="usb_mode_ngp">Portale e strumenti</string>
+    <string name="usb_mode_mtp">Sincronizzazione supporti Windows</string>
+    <string name="usb_mode_msc">Accesso scheda di memoria</string>
+    <string name="usb_mode_modem">Telefono come modem</string>
+    <string name="usb_mode_none">Solo ricarica</string>
+</resources>

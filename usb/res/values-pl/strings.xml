@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources>
+    <string name="usb_toast_phone_data_disabled">Dane telefonu zostaną wyłączone.</string>
+    <string name="usb_selection_notification_title">Połączenie USB</string>
+    <string name="usb_selection_notification_message">Wybierz, aby zarządzać połączeniem USB.</string>
+    <string name="usb_selection_notification_message_for_modem">Dotknij, aby rozłączyć i ponownie włączyć wewnętrzne dane telefonu</string>
+    <string name="usb_connection">Połączenie USB</string>
+    <string name="usb_mode_ngp">Portal i narzędzia</string>
+    <string name="usb_mode_mtp">Windows Media Sync</string>
+    <string name="usb_mode_msc">Dostęp do karty pamięci</string>
+    <string name="usb_mode_modem">Telefon jako modem</string>
+    <string name="usb_mode_none">Tylko ładowanie</string>
+</resources>
