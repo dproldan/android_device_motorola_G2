@@ -49,7 +49,27 @@ PRODUCT_PACKAGES += \
     dumpe2fs \
     resize2fs \
     libspellingcheckengine \
-    Usb
+    Usb \
+    librs_jni \
+    dspexec \
+    libbridge \
+    overlay.omap3 \
+    libtiOsLib \
+    libOMX.TI.AAC.encode \
+    libOMX.TI.AMR.encode \
+    libOMX.TI.WBAMR.encode \
+    libOMX.TI.JPEG.Encoder \
+    libLCML \
+    libOMX_Core \
+    libOMX.TI.Video.Decoder \
+    libOMX.TI.Video.encoder \
+    libVendor_ti_omx
+#    tiwlan.ini \
+#    wlan_cu \
+#    wlan_loader \
+#    libCustomWifi \
+#    dhcpcd.conf 
+#    wpa_supplicant.conf \
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=120

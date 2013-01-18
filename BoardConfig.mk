@@ -34,8 +34,8 @@ BOARD_HAVE_BLUETOOTH_BCM:=true
 # no hardware camera
 USE_CAMERA_STUB := true
 
-
 BOARD_ALWAYS_INSECURE := true
-BOARD_USE_YUV422I_DEFAULT_COLORFORMAT := true
+
+BOARD_NO_32BPP := true
 
 
