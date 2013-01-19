@@ -34,7 +34,9 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/libbt-mpeg12pl.so:/system/lib/libbt-mpeg12pl.so \
     ${DEVICE_PREBUILT}/bin/wlan_loader:/system/bin/wlan_loader \
     ${DEVICE_PREBUILT}/etc/wifi/fw_tiwlan_ap.bin:/system/etc/wifi/fw_tiwlan_ap.bin \
+    ${DEVICE_PREBUILT}/etc/wifi/fw_wlan1271.bin:/system/etc/wifi/fw_wlan1271.bin \
     ${DEVICE_PREBUILT}/etc/wifi/tiwlan_ap.ini:/system/etc/wifi/tiwlan_ap.ini \
+    ${DEVICE_PREBUILT}/etc/wifi/tiwlan.ini:/system/etc/wifi/tiwlan.ini \
     ${DEVICE_PREBUILT}/etc/wifi/fw_tiwlan_ap_rfmd.bin:/system/etc/wifi/fw_tiwlan_ap_rfmd.bin \
     ${DEVICE_PREBUILT}/etc/wifi/tiwlan_ap_rfmd.ini:/system/etc/wifi/tiwlan_ap_rfmd.ini \
     ${DEVICE_PREBUILT}/bin/Hostapd:/system/bin/Hostapd \
@@ -81,6 +83,11 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/hw/kinetics.G2.so:system/lib/hw/kinetics.G2.so \
     ${DEVICE_PREBUILT}/lib/hw/lights.G2.so:system/lib/hw/lights.G2.so \
     ${DEVICE_PREBUILT}/lib/hw/sensors.G2.so:system/lib/hw/sensors.G2.so \
+    ${DEVICE_PREBUILT}/lib/hw/alsa.G2.so:system/lib/hw/alsa.default.so \
+    ${DEVICE_PREBUILT}/lib/hw/gps.G2.so:system/lib/hw/gps.default.so \
+    ${DEVICE_PREBUILT}/lib/hw/kinetics.G2.so:system/lib/hw/kinetics.default.so \
+    ${DEVICE_PREBUILT}/lib/hw/lights.G2.so:system/lib/hw/lights.default.so \
+    ${DEVICE_PREBUILT}/lib/hw/sensors.G2.so:system/lib/hw/sensors.default.so \
 #    ${DEVICE_PREBUILT}/lib/hw/gralloc.omap3.so:system/lib/hw/gralloc.omap3.so \
 
 #copy hw libs under system/etc/firmware
@@ -139,6 +146,7 @@ PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/lib/libtinyxml_stl.so:system/lib/libtinyxml_stl.so \
      ${DEVICE_PREBUILT}/lib/libtpa_core.so:system/lib/libtpa_core.so \
      ${DEVICE_PREBUILT}/lib/libcryptoki.so:system/lib/libcryptoki.so \
+     ${DEVICE_PREBUILT}/lib/libsmapi.so:system/lib/libsmapi.so \
 
 
 
