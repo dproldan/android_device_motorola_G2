@@ -4,3 +4,4 @@ mkdir mnt-point
 sudo mount -t ext3 -o loop system.img mnt-point/
 cp -rfp ./out/target/product/G2/system/* mnt-point/
 sudo umount mnt-point
+

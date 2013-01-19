@@ -63,7 +63,10 @@ PRODUCT_PACKAGES += \
     libOMX_Core \
     libOMX.TI.Video.Decoder \
     libOMX.TI.Video.encoder \
-    libVendor_ti_omx
+    libVendor_ti_omx \
+    Gallery 
+
+
 #    tiwlan.ini \
 #    wlan_cu \
 #    wlan_loader \
@@ -72,9 +75,12 @@ PRODUCT_PACKAGES += \
 #    wpa_supplicant.conf \
 
 PRODUCT_PROPERTY_OVERRIDES += \
-    ro.sf.lcd_density=120
+    ro.sf.lcd_density=120 \
     ro.product.multi_touch_enabled=true \
     ro.product.max_num_touch=2 \
+    ro.product.board=G2
+    
+
 
 $(call inherit-product, build/target/product/generic.mk)
 $(call inherit-product, frameworks/base/data/sounds/OriginalAudio.mk)
