@@ -57,10 +57,15 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/bin/pvrsrvinit:/system/bin/pvrsrvinit \
     ${DEVICE_PREBUILT}/bin/secclkd:/system/bin/secclkd \
     ${DEVICE_PREBUILT}/bin/tcmd:/system/bin/tcmd \
+    ${DEVICE_PREBUILT}/bin/ntpd:/system/bin/ntpd \
     ${DEVICE_PREBUILT}/bin/serialno_tracker:/system/bin/serialno_tracker \
     ${DEVICE_PREBUILT}/bin/battd:/system/bin/battd \
     ${DEVICE_PREBUILT}/bin/gps_driver:/system/bin/gps_driver \
     ${DEVICE_PREBUILT}/default.prop:/system/default.prop \
+    ${DEVICE_PREBUILT}/etc/media_profiles.xml:/system/etc/media_profiles.xml \
+
+
+
     
 # copy all of our kernel modules under the "modules" directory to system/lib/modules
 PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/G2/proprietary/lib/modules && \
@@ -121,10 +126,10 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/egl/libGLES_android.so:/system/lib/egl/libGLES_android.so \
     ${DEVICE_PREBUILT}/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv1_CM_POWERVR_SGX530_125.so \
     ${DEVICE_PREBUILT}/lib/egl/libGLESv2_POWERVR_SGX530_125.so:/system/lib/egl/libGLESv2_POWERVR_SGX530_125.so \
+    ${DEVICE_PREBUILT}/lib/libIMGegl.so:/system/lib/libIMGegl.so \
+    ${DEVICE_PREBUILT}/lib/libusc.so:/system/lib/libusc.so \
+    ${DEVICE_PREBUILT}/lib/libhardware_legacy.so:/system/lib/libhardware_legacy.so \
 
-#PRODUCT_COPY_FILES += $(shell test -d vendor/motorola/G2/proprietary/xbin && \
-#	find vendor/motorola/G2/proprietary/xbin -name '*' \
-#	-printf '%p:system/xbin/%f ')
 
 PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/media/bootanimation.zip:system/media/bootanimation.zip \
@@ -148,6 +153,36 @@ PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/lib/libcryptoki.so:system/lib/libcryptoki.so \
      ${DEVICE_PREBUILT}/lib/libsmapi.so:system/lib/libsmapi.so \
 
+# audio
+
+#PRODUCT_COPY_FILES += \
+#     ${DEVICE_PREBUILT}/lib/libsrv_init.so:system/lib/libsrv_init.so \
 
 
+# wifi
+PRODUCT_COPY_FILES += \
+     ${DEVICE_PREBUILT}/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
 
+
+# dsp
+
+PRODUCT_COPY_FILES += \
+    ${DEVICE_PREBUILT}/lib/dsp/wbamrdec_sn.dll64P:/system/lib/dsp/wbamrdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/wbamrenc_sn.dll64P:/system/lib/dsp/wbamrenc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/conversions.dll64P:/system/lib/dsp/conversions.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/jpegenc_sn.dll64P:/system/lib/dsp/jpegenc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/ringio.dll64P:/system/lib/dsp/ringio.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/h264vdec_sn.dll64P:/system/lib/dsp/h264vdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/baseimage.dof:/system/lib/dsp/baseimage.dof \
+    ${DEVICE_PREBUILT}/lib/dsp/usn.dll64P:/system/lib/dsp/usn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/h264venc_sn.dll64P:/system/lib/dsp/h264venc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/postprocessor_dualout.dll64P:/system/lib/dsp/postprocessor_dualout.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/nbamrdec_sn.dll64P:/system/lib/dsp/nbamrdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/nbamrenc_sn.dll64P:/system/lib/dsp/nbamrenc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/mp4vdec_sn.dll64P:/system/lib/dsp/mp4vdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/m4venc_sn.dll64P:/system/lib/dsp/m4venc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/mpeg4aacdec_sn.dll64P:/system/lib/dsp/mpeg4aacdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/mpeg4aacenc_sn.dll64P:/system/lib/dsp/mpeg4aacenc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/mpeg4ingenc_sn.dll64P:system/lib/dsp/mpeg4ingenc_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/h264ingdec_sn.dll64P:system/lib/dsp/h264ingdec_sn.dll64P \
+    ${DEVICE_PREBUILT}/lib/dsp/mpeg4ingdec_sn.dll64P:system/lib/dsp/mpeg4ingdec_sn.dll64P \
