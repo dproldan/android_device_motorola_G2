@@ -155,14 +155,20 @@ PRODUCT_COPY_FILES += \
 
 # audio
 
-#PRODUCT_COPY_FILES += \
-#     ${DEVICE_PREBUILT}/lib/libsrv_init.so:system/lib/libsrv_init.so \
-
+PRODUCT_COPY_FILES += \
+     ${DEVICE_PREBUILT}/lib/libarcsoft.so:system/lib/libarcsoft.so \
+     ${DEVICE_PREBUILT}/lib/libaudioflinger.so:system/lib/libaudioflinger.so \
+     ${DEVICE_PREBUILT}/lib/libcamera.so:system/lib/libcamera.so \
+     ${DEVICE_PREBUILT}/lib/libjanus.so:system/lib/libjanus.so \
+     ${DEVICE_PREBUILT}/lib/libjanus_jni.so:system/lib/libjanus_jni.so \
+     ${DEVICE_PREBUILT}/lib/libpkip.so:system/lib/libpkip.so \
+     ${DEVICE_PREBUILT}/lib/libsmiledetect.so:system/lib/libsmiledetect.so \
+     ${DEVICE_PREBUILT}/lib/libtpa.so:system/lib/libtpa.so \
+     ${DEVICE_PREBUILT}/lib/libtpa_core.so:system/lib/libtpa_core.so \
 
 # wifi
 PRODUCT_COPY_FILES += \
      ${DEVICE_PREBUILT}/etc/dhcpcd/dhcpcd.conf:system/etc/dhcpcd/dhcpcd.conf \
-
 
 # dsp
 
