@@ -192,3 +192,15 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/lib/dsp/mpeg4ingenc_sn.dll64P:system/lib/dsp/mpeg4ingenc_sn.dll64P \
     ${DEVICE_PREBUILT}/lib/dsp/h264ingdec_sn.dll64P:system/lib/dsp/h264ingdec_sn.dll64P \
     ${DEVICE_PREBUILT}/lib/dsp/mpeg4ingdec_sn.dll64P:system/lib/dsp/mpeg4ingdec_sn.dll64P \
+
+# market compatibility
+
+PRODUCT_COPY_FILES += \
+    ${DEVICE_PREBUILT}/etc/permissions/android.hardware.location.gps.xml:/system/etc/permissions/android.hardware.location.gps.xml \
+    ${DEVICE_PREBUILT}/etc/permissions/android.hardware.sensor.accelerometer.xml:/system/etc/permissions/android.hardware.sensor.accelerometer.xml \
+    ${DEVICE_PREBUILT}/etc/permissions/android.hardware.touchscreen.multitouch.xml:/system/etc/permissions/android.hardware.touchscreen.multitouch.xml \
+    ${DEVICE_PREBUILT}/etc/permissions/android.hardware.wifi.xml:/system/etc/permissions/android.hardware.wifi.xml \
+    ${DEVICE_PREBUILT}/etc/permissions/handheld_core_hardware.xml:/system/etc/permissions/handheld_core_hardware.xml \
+
+
+
