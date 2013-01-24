@@ -203,4 +203,23 @@ PRODUCT_COPY_FILES += \
     ${DEVICE_PREBUILT}/etc/permissions/handheld_core_hardware.xml:/system/etc/permissions/handheld_core_hardware.xml \
 
 
+# FMRadio
+
+PRODUCT_COPY_FILES += \
+    ${DEVICE_PREBUILT}/lib/libFMRadio.so:/system/lib/libFMRadio.so \
+    ${DEVICE_PREBUILT}/lib/libfmradio_jni.so:/system/lib/libfmradio_jni.so \
+    ${DEVICE_PREBUILT}/lib/libfmradioplayer.so:/system/lib/libfmradioplayer.so \
+    ${DEVICE_PREBUILT}/etc/fm_rx_init_1273.2.bts:/system/etc/fm_rx_init_1273.2.bts \
+    ${DEVICE_PREBUILT}/etc/fm_rx_init_6450.2.bts:/system/etc/fm_rx_init_6450.2.bts \
+    ${DEVICE_PREBUILT}/bin/fmradioserver:/system/bin/fmradioserver \
+    ${DEVICE_PREBUILT}/app/FMRadio.apk:/system/app/FMRadio.apk \
+    ${DEVICE_PREBUILT}/app/FMRadioService.apk:/system/app/FMRadioService.apk \
+
+
+
+
+
+
+
+
 
