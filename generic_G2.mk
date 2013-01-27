@@ -73,14 +73,15 @@ PRODUCT_PACKAGES += \
     libOMX.TI.Video.Decoder \
     libOMX.TI.Video.encoder \
     libVendor_ti_omx \
-    charge_only_mode
+    charge_only_mode \
+    libasound 
 
 
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.sf.lcd_density=120 \
     ro.product.multi_touch_enabled=true \
     ro.product.max_num_touch=2 \
-    ro.product.board=G2
+    ro.product.board=G2 \
     wifi.interface=tiwlan0
     
 

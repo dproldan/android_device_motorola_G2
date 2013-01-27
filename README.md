@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 android_device_motorola_G2
 ==========================
 
@@ -45,3 +46,9 @@ android_device_motorola_G2
  7.  in the file /device/motorola/G2/mk_system_img_commands  are the commands needed to build a proper ext3 image that you can flash.  
 
 
+=======
+android_vendor_motorola_G2
+==========================
+
+Vendor files for Motorola MotoACTV
+>>>>>>> be72fadd483e7e0e9a17c19b38578834cc0cfa0b
